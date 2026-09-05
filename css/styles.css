@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #302b3f;
+    font-family: sans-serif;
+}
+main {
+    margin-top: 130px;
+}
+i{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+    font-family: vazir;
+    font-size: 16px;
+}
+li{
+    transition: 0.3s;
+}
+/*....Search-box.......*/
+input{
+    width: 500px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+input:focus{
+    border: 2px solid rgb(126, 36, 211);
+}
+/*.....sart-header......*/
+#header .logo{
+    width: 200px;
+
+}
+#header{
+    display: flex;
+    background: rgb(26, 26, 26);
+    align-items:  center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+}
+/*........contact-link........*/
+#header .contact{
+    background: white;
+    padding: 7px 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#header .contact:hover{
+    background: #67646b;
+    color: white;
+}
+#icon-contact{
+    color: black;
+}
+#header .icon-contact{
+    padding: 7px 8px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+}
+#header .icon-contact:hover{
+    background: #67646b;
+}
+/*.....start-navbar......*/
+#navbar{
+    background: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 13px;
+    margin: 0 60px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: fixed;
+    width: 80%;
+    height: 60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 70px;
+}
+#navbar #artist-menu {
+    position: relative;
+    padding: 10px 0;
+}
+#navbar #artist-menu .artists {
+    position: absolute;
+    top: 100%;
+    right: -35%;
+    background-color: rgb(21, 1, 43);
+    width: 180px;
+    padding: 8px 11px;
+    border-radius: 10px;
+    display: none;
+}
+#navbar #artist-menu:hover .artists {
+    display: block;
+}
+#navbar #artist-menu .artists li a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.116);
+    display: block;
+    padding: 4px 6px;
+}
+#navbar #artist-menu .artists li a:hover {
+    background-color: rgb(176, 139, 212);
+    border-bottom: none;
+    border-radius: 10px;
+    color: black;
+}
+#navbar #artist-menu .artists li:last-child a {
+    border-bottom: none;
+}
+#navbar .artists li {
+    border-bottom: none;
+}
+#navbar i{
+    color: rgb(176, 139, 212);
+}
+#navbar a{
+    color: white;
+}
+#navbar li{
+    border-bottom: 2px solid #242424;
+    width: auto;
+    transition: all 0.3s;
+}
+#navbar > li:hover{
+    scale: 1.1;
+}
+/*.......title-main.......*/
+.title-songs {
+    color: rgb(236, 234, 234);
+    text-align: center;
+    border-bottom: 2px solid rgb(21, 1, 43);
+    padding-bottom: 8px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 55px;
+    text-shadow: 2px 2px 0 rgb(176, 139, 212);
+    word-spacing: 6px;
+    letter-spacing: 4px;
+    font-family: cursive;
+}
+/*....start-main........*/
+#main img{
+    width: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+    margin: 90px 0;
+}
+#main .cover{
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+}
+#main .section-main{
+    background: rgb(21, 1, 43);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    border-radius: 18px;
+    color: white;
+}
+#main .section-main .info-mozic{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#main .section-main .info2-mozic{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#main .section-main .info2-mozic .button-mozic{
+    background: rgb(176, 139, 212);
+    padding: 6px 12px;
+    border-radius: 15px;
+    width: 100px;
+    text-align: center;
+    transition: 0.3s;
+}
+#main .section-main .info2-mozic .button-mozic:hover{
+    background: #441844;
+    color: white;
+}
+#main .section-main .button2-mozic{
+    display: block;
+    width: 90px;
+    margin: 25px auto;
+    padding: 6px 15px;
+    border-radius: 15px;
+    border: 2px solid rgb(176, 139, 212);
+    color: azure;
+    text-align: center;
+    transition: 0.3s;
+}
+#main .section-main .button2-mozic:hover{
+    background: rgb(176, 139, 212);
+    color: black;
+}
+/*.......start-footer.........*/
+#footer{
+    background: rgb(26, 26, 26);
+    padding-bottom: 10px;
+    height: 500px;
+}
+.footer-logo{
+    width: 300px;
+    position: relative;
+    bottom: 20px;
+}
+#footer .titr{
+    color: rgb(176, 139, 212);
+    margin-left: 35px;
+    margin-top: 0;
+}
+#footer .div-footer{
+    display: flex;
+    color: whitesmoke;
+}
+#footer .div-footer i{
+    color: rgb(176, 139, 212);
+}
+#footer .div-footer a{
+    color: whitesmoke;
+}
+#footer .div-footer .nav-footer{
+    display: flex;
+    gap: 30px;
+
+}
+#footer .icon-footer{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    font-size: 40px;
+}
+#footer .text-footer{
+    background: rgb(176, 139, 212);
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin: 40px auto;
+    font-weight: bold;
+}
+#footer .button-top{
+    background-color:  rgb(176, 139, 212);
+    width: 50px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 1350px;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.3s;
+    position: fixed;
+    bottom: 1px;
+}
+#footer .button-top:hover{
+    background-color: #9c539c;
+}
